@@ -11,3 +11,8 @@ def select_student(students, threshold):
     except ValueError:
         pass
     return {'Accepted': accepted, 'Refused': list(reversed(_students[i:]))}
+
+if __name__ == "__main__":
+    my_class = [['Kermit Wade', 27], ['Hattie Schleusner', 67], ['Ben Ball', 5], ['William Lee', 2]]
+    print(select_student(my_class, 20))
+    print(select_student(my_class, 50))

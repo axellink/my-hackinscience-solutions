@@ -27,3 +27,18 @@ def frame_text(text: str, frame: Frame) -> str:
         res += frame.left + i + ((max_width-len(i)) * ' ') + frame.right + '\n'
     res += frame.bottom_left + (max_width * frame.bottom) + frame.bottom_right
     return res
+
+if __name__ == "__main__":
+    fir = """      *
+     ***
+    *****
+   *******
+    *****
+   *******
+  *********
+ ***********
+*************
+     |||
+     |||"""
+    print(frame_text(fir, Frame()))
+    print(frame_text(fir, fancy_frame))

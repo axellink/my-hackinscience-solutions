@@ -17,3 +17,7 @@ def caesar_cypher_encrypt(s, key):
 
 def caesar_cypher_decrypt(s, key):
     return caesar_cypher_encrypt(s, -key)
+
+if __name__ == "__main__":
+    print(caesar_cypher_encrypt("Python is super disco !", 31))
+    print(caesar_cypher_decrypt("Udymts nx xzujw inxht !", 31))

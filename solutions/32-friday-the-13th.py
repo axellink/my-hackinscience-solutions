@@ -9,3 +9,6 @@ def friday_the_13th():
     while d.day != 13:
         d += timedelta(days = 7)
     return d.isoformat()
+
+if __name__ == "__main__":
+    print(friday_the_13th())

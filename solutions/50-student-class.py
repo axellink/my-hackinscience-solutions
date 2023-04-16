@@ -54,3 +54,18 @@ class City:
             [school.get_best_student() for school in self.schools],
             key=lambda x : x.get_mean()
         )
+    
+if __name__ == "__main__":
+    paris = City('paris')
+    hkis = School('hkis')
+    paris.add_school(hkis)
+    for student_name, student_grades in (('alice', (1, 2, 3)),
+                                         ('bob', (2, 3, 4)),
+                                         ('catherine', (3, 4, 5)),
+                                         ('daniel', (4, 5, 6))):
+        student = Student(student_name)
+        for grade in student_grades:
+            student.add_exam(grade)
+        hkis.add_student(student)
+    print(paris.get_best_school().name)
+    print(paris.get_best_student().name)

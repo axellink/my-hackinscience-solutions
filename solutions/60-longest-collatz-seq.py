@@ -6,3 +6,6 @@ def collatz_length(n):
         i += 1
         n = n//2 if n%2 == 0 else (n*3)+1
     return i
+
+if __name__ == "__main__":
+    print(collatz_length(10))

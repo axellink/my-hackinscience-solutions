@@ -22,3 +22,11 @@ def to_roman_numeral(n):
         occ, n = divmod(n,num)
         res += occ * roman
     return res
+
+if __name__ == "__main__":
+    print(to_roman_numeral(1))
+    print(to_roman_numeral(2))
+    print(to_roman_numeral(4))
+    print(to_roman_numeral(8))
+    print(to_roman_numeral(16))
+    print(to_roman_numeral(32))

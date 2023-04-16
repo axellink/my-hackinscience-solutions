@@ -14,3 +14,6 @@ def is_prime(n):
 
 def sum_primes(num):
     return sum([i for i in range(num) if is_prime(i)])
+
+if __name__ == "__main__":
+    print(sum_primes(10))

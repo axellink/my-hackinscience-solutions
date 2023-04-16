@@ -8,3 +8,8 @@ def _fibonacci(n):
 
 def fibonacci(n):
     return [_fibonacci(i) for i in range(n)]
+
+if __name__ == "__main__":
+    print(fibonacci(3))
+    print(fibonacci(5))
+    print(fibonacci(10))

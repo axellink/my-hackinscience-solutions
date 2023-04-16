@@ -19,3 +19,9 @@ def is_anagram(left, right):
     n_left.sort()
     n_right.sort()
     return n_left == n_right
+
+if __name__ == "__main__":
+    print(is_anagram("Marion", "romain"))
+    print(is_anagram("funeral", "real fun"))
+    print(is_anagram("Noé", "One"))
+    print(is_anagram("Noé", "Two"))

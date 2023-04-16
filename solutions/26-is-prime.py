@@ -12,3 +12,8 @@ def is_prime(n):
             return False
     
     return True
+
+if __name__ == "__main__":
+    print(is_prime(6))
+    print(is_prime(13))
+    print(is_prime(197))

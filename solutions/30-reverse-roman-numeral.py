@@ -24,3 +24,9 @@ def from_roman_numeral(roman_numeral):
             i += 1
         i += 1
     return res
+
+if __name__ == "__main__":
+    print(from_roman_numeral("V"))
+    print(from_roman_numeral("XX"))
+    print(from_roman_numeral("DCCC"))
+    print(from_roman_numeral("MMMM"))

@@ -5,3 +5,6 @@ def mul(numbers):
     for i in numbers:
         res *= i
     return res
+
+if __name__ == "__main__":
+    print(mul(range(1,6)))
